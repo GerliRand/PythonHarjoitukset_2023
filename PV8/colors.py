@@ -1,7 +1,8 @@
 from colorama import Fore, Back, Style
 
 print(Fore.BLUE + "Eri väristä tekstiä!")
-print(Back.LIGHTCYAN_EX + "Eri taustaväri :)")
+print(Back.LIGHTWHITE_EX + "Eri taustaväri :)")
+print("Edelleen teksti on sininen ja taustaväri on valkoinen!")
 
 # palautettaan kaikki normaaliksi
 print(Style.RESET_ALL)
