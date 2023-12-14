@@ -24,11 +24,21 @@ def get_even_number_text(number):
     else:
         return "Pariton"
 
-# apufunktio joka kääntää tekstin toisinpäin
-def reserve_string(text):
-    return text[::-1]
-
 # apufunktio joka laskee tunneista päivien lukumäärän
 def hours_to_days(hours):
     result = hours // 24
     return result
+
+# apufunktio joka kääntää tekstin toisinpäin
+def reserve_string(text):
+    return text[::-1]
+
+# apufuntio joka tarkistaa onko annettu teksti palindromi vai ei
+def check_palidrome(text):
+    # kutsutaan toista omaa funktiota
+    reversed_text = reserve_string(text)
+
+    if text == reversed_text:
+        return True
+    else:
+        return False
