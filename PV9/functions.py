@@ -6,3 +6,9 @@ def show_text():
     print("-------------------------------")
     print("Seuraa ohjeita!")
     print()
+
+# funktio joka tulostaa koko nimen ja iän
+def combine_text(first, last, age):
+    print(f"Tervetuloa: {first} {last}!")
+    print(f"Ikäsi on: {age} vuotta.")
+
