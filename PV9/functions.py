@@ -54,3 +54,9 @@ def check_order(code):
         result = False
 
     return result
+
+# apufunktio mikä tulostaa listan allekkain
+def show_list(data):
+    # tulosta sisältö silmukalla
+    for word in data:
+        print(word)
