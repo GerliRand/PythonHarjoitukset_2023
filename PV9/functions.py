@@ -42,3 +42,15 @@ def check_palidrome(text):
         return True
     else:
         return False
+
+# apufunktio joka tarkista onko tilauskoodi syötetty oikeassa formaatissa
+def check_order(code):
+    result = True
+    # jos koodi ei ole tasan 10 merkkiä => False
+    if len(code) != 10:
+        result = False
+    # jos koodin ensimmäinen kirjain ei ole T => False
+    if code[0] != "T":
+        result = False
+
+    return result
