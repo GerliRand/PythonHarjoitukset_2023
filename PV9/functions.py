@@ -60,3 +60,11 @@ def show_list(data):
     # tulosta sisältö silmukalla
     for word in data:
         print(word)
+
+# apufunktio joka laskee listan numeroista keskiarvon
+def get_list_average(numbers):
+    total = sum(numbers)
+    amount = len(numbers)
+    result = total / amount
+    result = round(result, 2)
+    return result
