@@ -9,3 +9,6 @@ text = input("Anna jotain tekstiä:\n")
 
 # kirjoitetaan tiedostoon käyttäjän antama teksti
 file_handle.write(text + "\n")
+
+# muista aina sulkea tiedosto!
+file_handle.close()

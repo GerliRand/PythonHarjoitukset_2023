@@ -4,6 +4,9 @@ file_handle = open("weekdays.txt", "r")
 # luetaan tiedoston sisältö muuttujaan
 content = file_handle.read()
 
+# muista aina sulkea tiedosto!
+file_handle.close()
+
 # muutetaan content -> listaksi
 # JOS TIEDOSTO SAATAAN LISTA MUOTOON - KAIKKI OPITTU PÄTEE!!!
 lines = content.split("\n")
